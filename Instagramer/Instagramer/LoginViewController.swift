@@ -10,19 +10,16 @@ import UIKit
 import Parse
 
 class LoginViewController: UIViewController {
-
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var error: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func onLogin(sender: AnyObject) {
@@ -34,29 +31,24 @@ class LoginViewController: UIViewController {
                 
             } else {
                 print(error!.localizedDescription)
+                self.error.text = error!.localizedDescription
             }
-            
         }
     }
 
     @IBAction func onSignup(sender: AnyObject) {
         let newUser = PFUser()
-        
-        // set user properties
         newUser.username = username.text
         newUser.password = password.text
         
         newUser.signUpInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            
             if let error = error {
                 print(error.localizedDescription)
+                self.error.text = error.localizedDescription
             } else {
                 print("User registered successfully")
-                
-                // manually segue to logged in view
                 self.performSegueWithIdentifier("loginSegue", sender: nil)
             }
-            
         }
     }
 }

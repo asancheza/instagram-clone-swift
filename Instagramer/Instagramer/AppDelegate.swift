@@ -12,6 +12,7 @@ import Parse
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    var storyboard = UIStoryboard(name: "Main", bundle: nil)
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Parse.initializeWithConfiguration(
@@ -24,13 +25,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if PFUser.currentUser() != nil {
             // if there is a logged in user then load the home view controller
-            
-            //let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PhotosViewController")
+            //let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("TimelineViewController")
             //window?.rootViewController = viewController
-            
         }
         
         return true
+    }
+    
+    func userDidLogout() {
+        let vc = storyboard.instantiateInitialViewController()! as UIViewController
+        window?.rootViewController = vc
     }
 
     func applicationWillResignActive(application: UIApplication) {

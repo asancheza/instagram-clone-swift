@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1281831C8CE2AF006F4327 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1281821C8CE2AF006F4327 /* ProfileViewController.swift */; };
+		1D1281851C8CE3AB006F4327 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1281841C8CE3AB006F4327 /* TimelineViewController.swift */; };
+		1D1281871C8CE479006F4327 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1281861C8CE479006F4327 /* TimelineTableViewCell.swift */; };
+		1D1281891C8CE4F0006F4327 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1281881C8CE4F0006F4327 /* Post.swift */; };
+		1D12818D1C8D0956006F4327 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D12818C1C8D0956006F4327 /* PublishViewController.swift */; };
 		1DF4D7B81C867AC5003EE0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4D7B71C867AC5003EE0C0 /* AppDelegate.swift */; };
-		1DF4D7BA1C867AC5003EE0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4D7B91C867AC5003EE0C0 /* ViewController.swift */; };
 		1DF4D7BD1C867AC5003EE0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4D7BB1C867AC5003EE0C0 /* Main.storyboard */; };
 		1DF4D7BF1C867AC5003EE0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4D7BE1C867AC5003EE0C0 /* Assets.xcassets */; };
 		1DF4D7C21C867AC5003EE0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4D7C01C867AC5003EE0C0 /* LaunchScreen.storyboard */; };
@@ -19,9 +23,13 @@
 /* Begin PBXFileReference section */
 		07B72B64B94DEB7A6589BF21 /* Pods_Instagramer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagramer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B8679B66F8EBFDA34F9699 /* Pods-Instagramer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagramer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagramer/Pods-Instagramer.release.xcconfig"; sourceTree = "<group>"; };
+		1D1281821C8CE2AF006F4327 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1D1281841C8CE3AB006F4327 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		1D1281861C8CE479006F4327 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		1D1281881C8CE4F0006F4327 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1D12818C1C8D0956006F4327 /* PublishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
 		1DF4D7B41C867AC5003EE0C0 /* Instagramer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagramer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF4D7B71C867AC5003EE0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1DF4D7B91C867AC5003EE0C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1DF4D7BC1C867AC5003EE0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DF4D7BE1C867AC5003EE0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DF4D7C11C867AC5003EE0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +50,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D12818A1C8CE568006F4327 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1D1281881C8CE4F0006F4327 /* Post.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1D12818B1C8CE986006F4327 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DF4D7CB1C869CE8003EE0C0 /* LoginViewController.swift */,
+				1D1281821C8CE2AF006F4327 /* ProfileViewController.swift */,
+				1D1281841C8CE3AB006F4327 /* TimelineViewController.swift */,
+				1D1281861C8CE479006F4327 /* TimelineTableViewCell.swift */,
+				1D12818C1C8D0956006F4327 /* PublishViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		1DF4D7AB1C867AC5003EE0C0 = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +91,13 @@
 		1DF4D7B61C867AC5003EE0C0 /* Instagramer */ = {
 			isa = PBXGroup;
 			children = (
-				1DF4D7CB1C869CE8003EE0C0 /* LoginViewController.swift */,
+				1D12818B1C8CE986006F4327 /* Controllers */,
+				1D12818A1C8CE568006F4327 /* Models */,
 				1DF4D7B71C867AC5003EE0C0 /* AppDelegate.swift */,
-				1DF4D7B91C867AC5003EE0C0 /* ViewController.swift */,
 				1DF4D7BB1C867AC5003EE0C0 /* Main.storyboard */,
-				1DF4D7BE1C867AC5003EE0C0 /* Assets.xcassets */,
 				1DF4D7C01C867AC5003EE0C0 /* LaunchScreen.storyboard */,
 				1DF4D7C31C867AC5003EE0C0 /* Info.plist */,
+				1DF4D7BE1C867AC5003EE0C0 /* Assets.xcassets */,
 			);
 			path = Instagramer;
 			sourceTree = "<group>";
@@ -214,7 +242,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DF4D7CC1C869CE8003EE0C0 /* LoginViewController.swift in Sources */,
-				1DF4D7BA1C867AC5003EE0C0 /* ViewController.swift in Sources */,
+				1D1281851C8CE3AB006F4327 /* TimelineViewController.swift in Sources */,
+				1D1281871C8CE479006F4327 /* TimelineTableViewCell.swift in Sources */,
+				1D1281891C8CE4F0006F4327 /* Post.swift in Sources */,
+				1D1281831C8CE2AF006F4327 /* ProfileViewController.swift in Sources */,
+				1D12818D1C8D0956006F4327 /* PublishViewController.swift in Sources */,
 				1DF4D7B81C867AC5003EE0C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

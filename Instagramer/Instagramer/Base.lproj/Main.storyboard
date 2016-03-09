@@ -37,7 +37,7 @@
                                 <rect key="frame" x="102" y="239" width="186" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TOZ-gI-hbp">
                                 <rect key="frame" x="141" y="334" width="38" height="30"/>
@@ -110,7 +110,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimelineTableViewCell" rowHeight="297" id="IBu-Bk-zDJ" customClass="TimelineTableViewCell" customModule="Instagramer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="297"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="297"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IBu-Bk-zDJ" id="E6W-BD-NyW">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="296.5"/>
